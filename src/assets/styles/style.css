@@ -16,12 +16,6 @@ header img{
     height: 70%;
 }
 
-main{
-    display: flex;
-    background: red;
-    width: 100%;
-    height: calc(100vh - 150px);
-}
 
 @media (min-width: 1000px) {
 /*FOOTER*/

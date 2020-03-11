@@ -13,8 +13,9 @@ const Navbar = (props) => {
   });
 
   return (
-    <>
-      <NavBar style={barAnimation}>
+    <div className="row">
+    <div className="col">
+    <NavBar style={barAnimation}>
         <FlexContainer>
           <Brand />
           <div>
@@ -57,7 +58,8 @@ const Navbar = (props) => {
         </FlexContainer>
       </NavBar>
       
-    </>
+    </div>
+    </div>
   )
 }
 
