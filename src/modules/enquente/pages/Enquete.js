@@ -1,44 +1,46 @@
-import React from 'react'
-import Navbar from '../../layouts/Footer';
-function Enquete() {
-    return(
-        <>
-        <script type="text/javascript" src="LoginScreen.js"></script>
-            <header>
-                <img src={require('../../../assets/img/logo-min.png')} alt="logo"/>
-                <div id="navbar">
-                <Navbar/>
-                </div>
-                <div id="navbarMobile">
-                    <ul>
-                        <ui>Audiências</ui>
-                        <ui>Calendário</ui>
-                        <ui>Ajuda</ui>
-                        <ui>Perfil</ui>
-                    </ul>
-                </div>
-            </header>
+import React, {Component} from 'react';
 
-            <footer>
-                <section id="projects">
-                    <img src={require('../../../assets/img/logo-min.png')} alt="logo"/>
-                    <h1>PROJETO FALA UFS</h1>
-                </section>
 
-                <section id="contributors">
-                    <h1>COLABORADORES</h1>
-                    <div>
-                       <img src={require('../../../assets/img/smartufs.png')} alt="smartufs"/>
-                        <img src={require('../../../assets/img/dau.png')} alt="dau"/>
-                        <img src={require('../../../assets/img/dcomp.png')} alt="dcomp"/>
-                    </div>
-                </section>
-                <section>
-                    <h1>© 2020 Universidade Federal de Sergipe</h1>
-                </section>
-            </footer>
-        </>
+
+import { Button } from 'semantic-ui-react';
+import TimerModal from '../components/TimerModal';
+import Slider from '../components/Slider';
+import CommentModal from '../../comments/components/CommentModal';
+import DateCard from '../../card/components/DateCard';
+import Full from '../../card/components/MainCard';
+
+class Enquete extends Component {
+
+    // prepareComentario = () => {
+  //   this.props.history.push('/comentario')
+  // }
+  // saindo = () => {
+  //   this.props.history.push('/login')
+  // }
+
+  render() {  
+    return (
+        <div>
+          <Full />            
+         <DateCard />
+        <TimerModal />
+        <Slider />
+        <CommentModal />  
+
+
+         <Button circular  style={{ color: 'white', height: 50, marginLeft: 730, marginTop: 70, backgroundColor: "#004694" }} className="sem_comentario" type="button">Finalizar voto sem comentário</Button>
+         <div>
+           <sapn className="likert_reactions"></sapn>
+         </div>
+         <span className="alert_how_to"></span>
+         <div className="como_votar">
+           <p><b>Como votar:</b> Clique no botão ao lado para ver as instruções e regras de votação.</p>
+         </div>
+
+
+        </div>
     );
+  }
 }
 
 export default Enquete;

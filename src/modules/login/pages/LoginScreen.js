@@ -1,17 +1,34 @@
-import React from 'react';
-import { withRouter } from 'react-router-dom'
+import React, {Component}  from 'react';
+import {  
+  Link,
+  // withRouter,
+  // Route,
+  // Redirect,
+} from 'react-router-dom'
 //import FormGroup from './form-group'
 
 
-class Login extends React.Component {
+class LoginScreen extends Component {
 
   state = {
     email: '',
     senha: '',
-    mensageErro: null
+    mensageErro: null,
+    logar: false,
   }
 
-/*   entrar = () => {
+  // handlelogin = () => {
+  //    this.setState(() => ({
+  //       logar: true
+  //     }))
+  // }
+
+
+
+    
+
+/*  
+ entrar = () => {
     axios
       .post('http://localhost:8080/api/usuarios/autenticar', {
         email: this.state.email,
@@ -24,30 +41,29 @@ class Login extends React.Component {
       })
 
   }
- */
-  prepareLogin = () => {
-    this.props.history.push('/enquete')
-  }
+  */
+    // prepareLogin = () => {
+    //   this.props.history.push('/enquete')
+    // }
 
-  //arrumar mensagem erro
+    //arrumar mensagem erro
+
+ 
+
   render() {
+
+   
     return (
       <div>
-        <head>
-          <meta charSet="UTF-8"></meta>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-          <title>Fala UFS</title>
-        </head>
-        <body>
-          <header>
-            <div className="header">
+       
+          <div className="container">
+          <div className="header">
               <div>
                 <span className="logo_img"></span>
                 <span className="login_text">FAZER LOGIN COM SIGAA</span>
               </div>
-
             </div>
-          </header>
+         
           <div>
             <span className="smartufs"></span>
           </div>
@@ -58,15 +74,18 @@ class Login extends React.Component {
             <span className="dcomp"></span>
           </div>
 
-          <div className="form-group">
+         
 
+          
+
+          <div className="form-group">
             <input type="email"
               value={this.state.email}
               onChange={e => this.setState({ email: e.target.value })}
               className="form-control1" id="exampleInputEmail1"
               placeholder="Usuário">
             </input>
-
+            </div>
             <div className="form-group">
               <input type="password"
                 value={this.state.senhal}
@@ -76,13 +95,18 @@ class Login extends React.Component {
                 placeholder="Senha">
               </input>
             </div>
+            <Link key={'/enquete'} to={'/enquete'} className="btn btn-primary">Login</Link>
 
           </div>
-          <button onClick={ this.props.history.push('/enquete')} className="entrar" type="button">ENTRAR</button>
-        </body>
+          
+         
+         
+         
+         
+       
       </div>
     );
   }
 }
 
-export default withRouter(Login);
+export default LoginScreen;
