@@ -6,10 +6,10 @@ import Slider from '@material-ui/core/Slider';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    width: 470,
-    marginTop: -90,
-    marginLeft: 443,
-    
+    //width: 470,
+    //marginTop: -145,
+    //marginLeft: 443,
+
   },
   margin: {
     height: theme.spacing(3),
@@ -49,6 +49,8 @@ export default function DiscreteSlider() {
   return (
     <div className={classes.root}>
 
+      <div className="likert_reactions"></div>
+      
       <Slider
         defaultValue={1}
         getAriaValueText={valuetext}
@@ -58,7 +60,9 @@ export default function DiscreteSlider() {
         marks
         min={1}
         max={5}
+        style={{ width: "100%" }}
       />
+
     </div>
   );
 }

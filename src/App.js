@@ -1,12 +1,8 @@
-import React, {Component} from 'react'
-import {BrowserRouter as Router } from 'react-router-dom';
-// import Main from './modules/layouts/Main'
-
-// import { HashRouter } from 'react-router-dom';
+import React, { Component } from 'react'
+import { BrowserRouter as Router } from 'react-router-dom';
 import './assets/styles/style.css';
 import Navbar from "./modules/layouts/Navbar";
 import Footer from './modules/layouts/Footer';
-
 import Routes from './Rotas';
 
 class App extends Component {
@@ -20,18 +16,14 @@ class App extends Component {
 
   render() {
     return (
-      <Router>      
-      <div>
-       <Navbar
+      <Router>
+        <Navbar
           navbarState={this.state.navbarOpen}
           handleNavbar={this.handleNavbar}
         />
-      <Routes/>   
-        <Footer/>      
-      </div>     
+        <Routes />
+        <Footer />
       </Router>
-
-   
     )
   }
 }
