@@ -19,7 +19,7 @@ class ModalExampleSize extends Component {
     return (
       <div>
         
-        <Button circular color='red' style={{ marginTop: 80, marginLeft: 50}} animated='vertical' onClick={this.show('large')}>
+        <Button circular color='red' style={{ }} animated='vertical' onClick={this.show('large')}>
         <Button.Content visible>Ver tempo restante da votação</Button.Content>
               <Button.Content hidden>
                 <Icon name='time' />

@@ -6,7 +6,7 @@ const description = [
 ].join(' ')
 
 const CardExampleExtraContent = () => (
-  <Card color='red' style={{ top: 80, width: 235, left: 50}}>
+  <Card color='red' style={{ width: 235 }}>
     <Card.Content style={{textAlign:"center"}} header='Audiência criada em:' />
     <Card.Content style={{textAlign:"center"}} description={description} />
   </Card>

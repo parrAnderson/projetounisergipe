@@ -27,7 +27,6 @@ footer{
     bottom: 0vh;
     background: #004694;
     width: 100%;
-    height: 150px; 
 }
 footer section{
     height: 40%;
@@ -92,7 +91,6 @@ footer #contributors img{
         bottom: 0vh;
         background: #004694;
         width: 100%;
-        height: 150px; 
     }
     footer section{
         height: 40%;
@@ -228,14 +226,11 @@ footer #contributors img{
     height: 16px;
     left: 534px;
     top: 300px;
-
-
     font-family: 'Montserrat', sans-serif;
     font-style: initial;
     font-weight: normal;
     font-size: 14px;
     line-height: 10px;
-    
 
     letter-spacing: 0.4px;
 
@@ -243,45 +238,36 @@ footer #contributors img{
 
 }
 
-.alert_how_to {
-    position: absolute;
+.alert_how_to {   
     width: 24px;
-    height: 24px;
-    left: 395px;
-    top: 406px;
-    
+    height: 24px;    
     background-image: url('../img/alert_how_to.png');
-
+    display: inline-block;
 }
 
 .likert_reactions {
-    display: block;
-    position: absolute;
-    width: 517px;
-    height: 45px;
-    left: 420px;
-    top: 500px;
+    display: block; 
+    width: 100%;
+    height: 45px;   
     background-image: url('../svg/likert_reactions.svg');
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: auto;
+    background-position: center;
 }
 
 
-.como_votar {
-    position: absolute;
+.como_votar {  
     width: 657px;
-    height: 50px;
-    left: 430px;
-    top: 410px;
-    
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
-    
-
     letter-spacing: 0.4px;
-
     color: #000000;
-    
+    position: relative;
+    top: -6px;
+    margin-left: 10px;
 }
 
 
@@ -291,16 +277,12 @@ footer #contributors img{
     border-radius: 10px;
     color: #fff;
     border: none;
-    font-weight: 700;
-    position: absolute;
+    font-weight: 700;  
     width: 226px;
-    height: 36px;
-    left: 377px;
-    top: 570px;
+    height: 36px;   
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
     cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    
+    font-family: 'Montserrat', sans-serif;    
 }
 
 
@@ -423,15 +405,12 @@ html, body {
 
 }
 .logo_img {
-    position: absolute;
-    width: 332px;
-    height: 273px;
-    left: 635px;
-    top: 100px;
+    position: relative;
+    width: 155px;
+    height: 140px;
     background-repeat: no-repeat;
     background-image: url('../svg/logo.svg');
-    
-
+    display: inline-block;
 }
 .smartufs {
     display: block;
@@ -462,18 +441,12 @@ html, body {
 }
 
 .login_text {
-    display: block;
-    position: absolute;
-    top: 300px;
-    left: 618px;
+   
     color: #004694;
 }
 
 .form-control1 {
-    font-family: 'Roboto', sans-serif;
-    position: relative;
-    left: 625px;
-    top: 350px;
+    font-family: 'Roboto', sans-serif;   
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     font-weight: 700;

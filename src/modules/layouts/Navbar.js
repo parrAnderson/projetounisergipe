@@ -13,53 +13,53 @@ const Navbar = (props) => {
   });
 
   return (
-    <div className="row">
-    <div className="col">
-    <NavBar style={barAnimation}>
-        <FlexContainer>
-          <Brand />
-          <div>
-            <Button circular color='blue' style={{ width: 110, top: 15, backgroundColor: "#004694" }} animated='vertical'>
-              <Button.Content visible>Audiências</Button.Content>
-              <Button.Content hidden>
-                <Icon name='discussions' />
-              </Button.Content>
-            </Button>
+    <header className="row">
+      <div className="col">
+        <NavBar style={barAnimation}>
+          <FlexContainer>
+            <Brand />
+            <div>
+              <Button circular color='blue' style={{ width: 110, top: 15, backgroundColor: "#004694" }} animated='vertical'>
+                <Button.Content visible>Audiências</Button.Content>
+                <Button.Content hidden>
+                  <Icon name='discussions' />
+                </Button.Content>
+              </Button>
 
-            <Button circular color='blue' style={{ width: 110, top: 15,backgroundColor: "#004694" }} animated='vertical'>
-              <Button.Content visible>Calendário</Button.Content>
-              <Button.Content hidden>
-                <Icon name='calendar check' />
-              </Button.Content>
-            </Button>
+              <Button circular color='blue' style={{ width: 110, top: 15, backgroundColor: "#004694" }} animated='vertical'>
+                <Button.Content visible>Calendário</Button.Content>
+                <Button.Content hidden>
+                  <Icon name='calendar check' />
+                </Button.Content>
+              </Button>
 
-            <Button circular color='blue' style={{ width: 100, top: 15, backgroundColor: "#004694" }} animated='vertical'>
-              <Button.Content visible>Ajuda</Button.Content>
-              <Button.Content hidden>
-                <Icon name='question circle' />
-              </Button.Content>
-            </Button>
+              <Button circular color='blue' style={{ width: 100, top: 15, backgroundColor: "#004694" }} animated='vertical'>
+                <Button.Content visible>Ajuda</Button.Content>
+                <Button.Content hidden>
+                  <Icon name='question circle' />
+                </Button.Content>
+              </Button>
 
-            <Button circular color='blue' style={{ width: 100, top: 15, backgroundColor: "#004694" }} animated='vertical'>
-              <Button.Content visible>Perfil</Button.Content>
-              <Button.Content hidden>
-                <Icon name='user circle' />
-              </Button.Content>
-            </Button>
+              <Button circular color='blue' style={{ width: 100, top: 15, backgroundColor: "#004694" }} animated='vertical'>
+                <Button.Content visible>Perfil</Button.Content>
+                <Button.Content hidden>
+                  <Icon name='user circle' />
+                </Button.Content>
+              </Button>
 
-            <Button circular color='red' style={{ width: 100, top: 15, }} animated>
-              <Button.Content visible>Sair</Button.Content>
-              <Button.Content hidden>
-                <Icon name='log out' />
-              </Button.Content>
-            </Button>
-          </div>
+              <Button circular color='red' style={{ width: 100, top: 15, }} animated>
+                <Button.Content visible>Sair</Button.Content>
+                <Button.Content hidden>
+                  <Icon name='log out' />
+                </Button.Content>
+              </Button>
+            </div>
 
-        </FlexContainer>
-      </NavBar>
-      
-    </div>
-    </div>
+          </FlexContainer>
+        </NavBar>
+
+      </div>
+    </header>
   )
 }
 
