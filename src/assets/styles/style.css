@@ -1,6 +1,10 @@
 
 /*HEADER*/
 /*enquete.css*/
+
+.bg-primary{
+    background-color:#004694! important;
+}
 header{
     background: #004694;
     flex-wrap: wrap;
